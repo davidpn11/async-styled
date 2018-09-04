@@ -3,6 +3,7 @@
   "plugins": [
     "transform-class-properties",
     "transform-object-assign",
-    "transform-object-rest-spread"
+    "transform-object-rest-spread",
+    "dynamic-import-node"
   ]
 }

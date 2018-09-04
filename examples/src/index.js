@@ -22,12 +22,12 @@ class App extends Component {
           return (
             <div className="App">
               <h1>Change Styles</h1>
-              {/* <button onClick={() => setModules(import('/src/styles/style1'))}>
+              <button onClick={() => setModules(import('./styles/style1'))}>
                 Style1
               </button>
-              <button onClick={() => setModules(import('/src/styles/style2'))}>
+              <button onClick={() => setModules(import('./styles/style2'))}>
                 Style2
-              </button> */}
+              </button>
               <div className="sender">{this.getSender({ Input, Button })}</div>
             </div>
           )
