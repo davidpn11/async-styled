@@ -19,7 +19,11 @@ class AsyncStyled extends Component {
   }
 
   render() {
-    return <h1>tes2t</h1>
+    const { mod } = this.state
+    return this.props.children({
+      ...mod,
+      setModules: this.setModules,
+    })
   }
 }
 
