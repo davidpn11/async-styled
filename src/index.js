@@ -8,10 +8,18 @@ class AsyncStyled extends Component {
     }
   }
 
-  setModules = importPath => {}
+  setModules = importPath => {
+    if (importPath.constructor.name !== 'Promise') {
+      console.error('is not a promise')
+      return
+    }
+    importPath
+      .then(modules => this.setState({ mod: { ...modules } }))
+      .catch(err => console.error(err))
+  }
 
   render() {
-    return <h1>test</h1>
+    return <h1>tes2t</h1>
   }
 }
 
