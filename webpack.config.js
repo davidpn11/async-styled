@@ -6,6 +6,11 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
 })
 module.exports = {
   entry: path.join(__dirname, 'examples/src/index.js'),
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'async-style.js',
+    libraryTarget: 'commonjs2',
+  },
   module: {
     rules: [
       {
