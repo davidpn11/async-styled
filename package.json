@@ -1,8 +1,8 @@
 {
   "name": "async-styled",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Load your CSS-in-JS components only when you need it!",
-  "main": "index.js",
+  "main": "dist/async-style.js",
   "scripts": {
     "test": "no",
     "start": "webpack-dev-server --mode development",
